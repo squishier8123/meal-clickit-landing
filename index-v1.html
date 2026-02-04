@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Clickit | Hot Entrees + Cold Sides. One Container.</title>
+    <meta name="description" content="The only meal prep container with a removable entree section. Microwave your protein while keeping salads and sides fresh. Pre-order now.">
+
+    <!-- Fonts - Modern Clean Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles - Ultra Modern Minimalist -->
+    <link rel="stylesheet" href="css/minimalist-ink-v1.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <!-- Ink Review Drawings - These animate as user scrolls/moves -->
+    <div class="ink-canvas" aria-hidden="true">
+        <!-- Review 1 - Top left area -->
+        <div class="ink-review ink-review--1" data-scroll-trigger="0.1">
+            <svg viewBox="0 0 300 120" class="ink-svg">
+                <path class="ink-line" d="M10,20 Q50,15 90,22 T170,18 T250,25" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <text class="ink-text" x="20" y="50">"Finally, hot chicken</text>
+                <text class="ink-text" x="30" y="75">+ cold salad in ONE box"</text>
+                <text class="ink-text ink-signature" x="180" y="105">- Mike R.</text>
+            </svg>
+        </div>
+
+        <!-- Review 2 - Right side -->
+        <div class="ink-review ink-review--2" data-scroll-trigger="0.3">
+            <svg viewBox="0 0 280 100" class="ink-svg">
+                <path class="ink-line" d="M5,15 C40,10 80,20 120,12 S200,18 270,15" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <text class="ink-text" x="15" y="45">"The click is so satisfying"</text>
+                <text class="ink-text ink-signature" x="160" y="80">- Sarah K.</text>
+            </svg>
+        </div>
+
+        <!-- Review 3 - Lower left -->
+        <div class="ink-review ink-review--3" data-scroll-trigger="0.5">
+            <svg viewBox="0 0 320 130" class="ink-svg">
+                <path class="ink-line" d="M8,25 Q60,18 120,28 T240,20 T310,26" fill="none" stroke="currentColor" stroke-width="1.3"/>
+                <text class="ink-text" x="20" y="55">"My gym meals are</text>
+                <text class="ink-text" x="25" y="82">completely transformed"</text>
+                <text class="ink-text ink-signature" x="200" y="115">- James T.</text>
+            </svg>
+        </div>
+
+        <!-- Review 4 - Right side lower -->
+        <div class="ink-review ink-review--4" data-scroll-trigger="0.65">
+            <svg viewBox="0 0 290 110" class="ink-svg">
+                <path class="ink-line" d="M10,18 Q70,12 140,22 T260,16" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <text class="ink-text" x="18" y="48">"Worth every penny."</text>
+                <text class="ink-text" x="22" y="73">Simple. Smart. Perfect.</text>
+                <text class="ink-text ink-signature" x="170" y="100">- Alex M.</text>
+            </svg>
+        </div>
+
+        <!-- Review 5 - Bottom area -->
+        <div class="ink-review ink-review--5" data-scroll-trigger="0.8">
+            <svg viewBox="0 0 340 120" class="ink-svg">
+                <path class="ink-line" d="M12,22 C60,15 130,28 200,18 S280,24 330,20" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <text class="ink-text" x="25" y="52">"Sunday prep just got</text>
+                <text class="ink-text" x="30" y="78">10x easier. Obsessed."</text>
+                <text class="ink-text ink-signature" x="220" y="108">- Jordan P.</text>
+            </svg>
+        </div>
+
+        <!-- Decorative ink elements -->
+        <svg class="ink-deco ink-deco--1" viewBox="0 0 60 60">
+            <circle cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="1" class="ink-circle"/>
+        </svg>
+        <svg class="ink-deco ink-deco--2" viewBox="0 0 80 40">
+            <path d="M5,20 Q20,5 40,20 T75,20" fill="none" stroke="currentColor" stroke-width="1" class="ink-wave"/>
+        </svg>
+        <svg class="ink-deco ink-deco--3" viewBox="0 0 50 50">
+            <path d="M25,5 L25,45 M5,25 L45,25" fill="none" stroke="currentColor" stroke-width="1" class="ink-cross"/>
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="Meal Clickit" height="48">
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#pricing" class="nav-cta">Pre-Order</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Early Bird Pricing</span>
+                <h1 class="hero-title">
+                    Hot Protein.<br>
+                    <span class="highlight">Crisp Greens.</span><br>
+                    One Container.
+                </h1>
+                <p class="hero-subtitle">
+                    The removable entree section lets you microwave your protein
+                    while keeping your salad perfectly fresh.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#pricing" class="btn btn-primary">
+                        Order Now
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-removable.jpeg" alt="Meal Clickit Container with removable section">
+                <div class="hero-image-accent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="ps-grid">
+                <div class="problem-card">
+                    <div class="card-icon card-icon--problem">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M15 9l-6 6M9 9l6 6"/>
+                        </svg>
+                    </div>
+                    <h3>The Problem</h3>
+                    <p><strong>Soggy salads. Lukewarm protein.</strong> You can't microwave without destroying your greens.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon card-icon--solution">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12l3 3 5-6"/>
+                        </svg>
+                    </div>
+                    <h3>The Solution</h3>
+                    <p><strong>Remove. Heat. Return.</strong> Pop out the entree section, microwave it, click it back.</p>
+                </div>
+            </div>
+            <div class="solution-visual">
+                <img src="images/optimized/product-removable.webp" alt="Removable entree section demonstration">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Three simple steps to the perfect meal</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-image">
+                        <img src="images/optimized/product-lid-open.jpg" alt="Pack your meal">
+                    </div>
+                    <h3>Pack</h3>
+                    <p>Fill the entree section with protein. Add salads and snacks to the sides.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-image">
+                        <img src="images/optimized/product-removable.webp" alt="Remove and heat">
+                    </div>
+                    <h3>Heat</h3>
+                    <p>Pop out the orange section and microwave. Your salad stays cool at your desk.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-image">
+                        <img src="images/optimized/product-microwave.webp" alt="Enjoy your meal">
+                    </div>
+                    <h3>Enjoy</h3>
+                    <p>Click it back together. Hot protein, fresh greens, perfect meal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Story -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="founder-content">
+                <blockquote>
+                    "I meal prep every Sunday for my workouts. But I was tired of choosing between cold chicken or soggy salads. So I designed the container I wished existed."
+                </blockquote>
+                <div class="founder-info">
+                    <div class="founder-avatar">G</div>
+                    <div class="founder-details">
+                        <strong>Geoff</strong>
+                        <span>Founder, Meal Clickit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for Real Meal Prep</h2>
+                <p class="section-subtitle">Every detail designed for your weekly routine</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 3v18"/>
+                        </svg>
+                    </div>
+                    <h4>3-Compartment Design</h4>
+                    <p>Main entree plus two sides for balanced meals.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="4"/>
+                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/>
+                        </svg>
+                    </div>
+                    <h4>Microwave Safe</h4>
+                    <p>Heat your protein without warping or chemicals.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/>
+                            <path d="M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h4>Leak-Proof Lids</h4>
+                    <p>Toss it in your bag worry-free.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 6h18M3 12h18M3 18h18"/>
+                        </svg>
+                    </div>
+                    <h4>Stackable</h4>
+                    <p>Nest perfectly in your fridge all week.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h4>BPA-Free</h4>
+                    <p>Safe materials for you and your family.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h4>Dishwasher Safe</h4>
+                    <p>Top-rack safe for easy cleaning.</p>
+                </div>
+            </div>
+
+            <div class="features-showcase">
+                <img src="images/optimized/product-lids.webp" alt="Meal Clickit with all components">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lock In Early Bird Pricing</h2>
+                <p class="section-subtitle">Save up to 40% before presale ends</p>
+            </div>
+
+            <div class="funding-bar">
+                <div class="funding-stats">
+                    <span class="funding-raised">$12,847 raised</span>
+                    <span class="funding-goal">of $20,000</span>
+                </div>
+                <div class="funding-track">
+                    <div class="funding-fill" style="width: 64%;"></div>
+                </div>
+                <p class="funding-backers">247 early supporters</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>3 Containers</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-old">$44.99</span>
+                        <span class="price-current">$29.99</span>
+                    </div>
+                    <p class="price-per">$10.00 per container</p>
+                    <ul class="pricing-features">
+                        <li>3x Meal Clickit Containers</li>
+                        <li>3x Removable Entree Sections</li>
+                        <li>3x Leak-Proof Lid Sets</li>
+                        <li>Free Shipping</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Reserve Starter</a>
+                </div>
+
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Weekday</h3>
+                        <p>5 Containers</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-old">$74.99</span>
+                        <span class="price-current">$44.99</span>
+                    </div>
+                    <p class="price-per">$9.00 per container — Save 40%</p>
+                    <ul class="pricing-features">
+                        <li>5x Meal Clickit Containers</li>
+                        <li>5x Removable Entree Sections</li>
+                        <li>5x Leak-Proof Lid Sets</li>
+                        <li>Free Shipping</li>
+                        <li><strong>+ FREE Extra Lid Set</strong></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Reserve Weekday</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Meal Prep Pro</h3>
+                        <p>10 Containers</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-old">$149.99</span>
+                        <span class="price-current">$79.99</span>
+                    </div>
+                    <p class="price-per">$8.00 per container — Save 47%</p>
+                    <ul class="pricing-features">
+                        <li>10x Meal Clickit Containers</li>
+                        <li>10x Removable Entree Sections</li>
+                        <li>10x Leak-Proof Lid Sets</li>
+                        <li>Free Shipping</li>
+                        <li><strong>+ 2 FREE Extra Lid Sets</strong></li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Reserve Pro</a>
+                </div>
+            </div>
+
+            <div class="guarantee-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <p><strong>100% Satisfaction Guaranteed.</strong> Full refund if you're not happy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions?</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        When will my order ship?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pre-orders ship in Spring 2026. We'll send tracking updates as we get closer.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is it really microwave safe?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! The entree section is made from BPA-free polypropylene designed for repeated heating.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What are the dimensions?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>9" x 7" x 2.5" — fits in standard lunch bags and most microwaves. Entree section holds ~12oz.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I cancel my pre-order?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Cancel anytime before shipping for a full refund. Email support@mealclickit.com.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Join 247 Meal Preppers</h2>
+            <p>Lock in 40% off before early bird pricing ends. Ships Spring 2026.</p>
+            <a href="#pricing" class="btn btn-primary btn-large">
+                Order Now
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <span class="guarantee-text">100% Money-Back Guarantee</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Meal Clickit" height="40">
+                    <p>The smarter way to meal prep.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <a href="#faq">FAQ</a>
+                        <a href="mailto:support@mealclickit.com">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meal Clickit. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/ink-animations.js"></script>
+</body>
+</html>
